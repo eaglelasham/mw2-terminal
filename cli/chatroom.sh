@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 SUPABASE_URL="https://thdzrkzdkdihjximoalb.supabase.co"
-SUPABASE_KEY="YOUR_ANON_KEY_HERE"
+SUPABASE_KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRoZHpya3pka2RpaGp4aW1vYWxiIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjAyNDkzNzIsImV4cCI6MjA3NTgyNTM3Mn0.uHpGricbNHVWsndClTd8K7LVRTCzWLF0ziwuGKvOSTw"
 
 REFRESH_RATE=5  # default refresh rate in seconds
 USERNAME=""
