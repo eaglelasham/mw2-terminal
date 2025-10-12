@@ -4,21 +4,30 @@ echo -e "\e[32m"
 echo "============================"
 echo "        Dawn System         "
 echo "============================"
-echo
-echo "1. View Targets"
-echo "2. Chatroom"
-echo "3. Exit"
-read -p "Select option: " opt
 
-if [ "$opt" = "1" ]; then
-  echo "Showing targets..."
-  sleep 1
-  echo "[REDACTED]  — Classified targets list."
-elif [ "$opt" = "2" ]; then
-  echo "Opening chatroom..."
-  sleep 1
-  echo "Chatroom coming soon..."
-else
-  echo "Exiting.."
-  sleep 2
-fi
+while true; do
+    echo
+    echo "1. View Targets"
+    echo "2. Chatroom"
+    echo "3. Exit"
+    read -p "Select option: " opt
+
+    case "$opt" in
+        1)
+            echo " Showing targets..."
+            sleep 1
+            echo "[REDACTED]  — Classified targets list."
+            ;;
+        2)
+            bash chatroom.sh
+            ;;
+        3)
+            echo "Exiting.."
+            sleep 1
+            exit 0
+            ;;
+        *)
+            echo "Invalid option."
+            ;;
+    esac
+done
